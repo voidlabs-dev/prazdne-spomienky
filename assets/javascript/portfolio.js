@@ -17,7 +17,7 @@ $(document).ready(() => {
   }
 
   app.titleChanger(['prázdne', 'spomienky', 'voidlabs']);
-  app.iconChanger(['assets/icons/eyes/eye1.png', 'assets/icons/eyes/eye2.png', 'assets/icons/eyes/eye3.png']);
+  app.iconChanger(['assets/icons/eyes/eye1.png', 'assets/icons/eyes/eye2.png', 'assets/icons/eyes/eye3.png', 'assets/icons/eyes/eye1.png']);
 });
 
 if ($.cookie('videoTime')) {
