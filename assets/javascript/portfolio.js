@@ -9,35 +9,21 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: 'Lummit',
+      name: 'Nič nezostáva v pamäti tak silno ako to, čo chceme zabudnúť',
       link: '76561197960276740',
     },
     {
-      name: 'Neso',
+      name: '- Michel de Montaigne',
       link: '76561198193201687',
-    },
-    {
-      name: 'loljuxd',
-      link: '76561198016198032',
-    },
-    {
-      name: 'Lost',
-      link: '76561199079530557',
-    },
-    {
-      name: 'mannin',
-      link: '76561197975672336',
     },
   ];
 
   for (let i in links) {
     let link = links[i];
 
-    $('#marquee').append(`<a href="https://steamcommunity.com/profiles/${link.link}" target="_BLANK">${link.name}</a>`);
-
     link = $('#marquee').children('a').last();
 
-    if (i != links.length - 1) $('#marquee').append(' <img class="emoticon" src="assets/others/mgh_17.png"> ');
+    if (i != links.length - 1) $('#marquee').append(' <img class="emoticon" src="assets/eyes/eye1.png"> ');
   }
 
   if (mobileAndTabletCheck()) {
@@ -46,8 +32,8 @@ $(document).ready(() => {
     app.shouldIgnoreVideo = true;
   }
 
-  app.titleChanger(['prázdne', 'spomienky', 'prázdne spomienky', 'voidlabs']);
-  app.iconChanger(['assets/icons/eyes/eye1.png', 'assets/icons/eyes/eye2.png', 'assets/icons/eyes/eye3.png', 'assets/icons/eyes/eye1.png']);
+  app.titleChanger(['prázdne', 'spomienky', 'voidlabs']);
+  app.iconChanger(['assets/icons/eyes/eye1.png', 'assets/icons/eyes/eye2.png', 'assets/icons/eyes/eye3.png']);
 });
 
 if ($.cookie('videoTime')) {
