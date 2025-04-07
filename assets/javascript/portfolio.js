@@ -50,10 +50,9 @@ $('html').on('contextmenu', (event) => {
 
   const trollfaceLight = app.skippedIntro ? '' : 'trollface-light';
 
-  img.src = 'assets/others/trollface.jpg';
+  img.src = 'assets/others/trollface.png';
   img.width = 64;
   img.height = 64;
-  img.alt = 'obnoxious.club';
   img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
   img.className = `troll ${trollfaceLight}`;
 
@@ -110,7 +109,7 @@ $.getJSON(ipgeolocation, (data) => {
 
       clearCursor();
 
-      writeLine([`<i style='color: #F62459'>prázdne spomienky $$$</i>`], 120, 500, () => {
+      writeLine([`<i style='color: #F62459'>prázdne spomienky</i>`], 120, 500, () => {
         timeouts.push(
           setTimeout(() => {
             if (app.skippedIntro) return;
