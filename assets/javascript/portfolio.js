@@ -7,14 +7,12 @@ const timeouts = [];
 const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 
- $(document).ready(() => {
-   const text = 'Nič nezostáva v pamäti tak silno ako to, čo chceme zabudnúť - Michel de Montaigne';
+$(document).ready(() => {
+  const text = 'Nič nezostáva v pamäti tak silno ako to, čo chceme zabudnúť - Michel de Montaigne';
   $('#marquee').text(text);
-   }
-    
+
   if (mobileAndTabletCheck()) {
     $('#background').replaceWith('<div id="background" style="background-image: url(assets/images/mobile-background.jpg);"></div>');
-
     app.shouldIgnoreVideo = true;
   }
 
