@@ -7,7 +7,7 @@ const timeouts = [];
 const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 $(document).ready(() => {
-  const links = [
+   const links = [
      {
        name: 'Nič nezostáva v pamäti tak silno ako to, čo chceme zabudnúť',
        link: '76561197960276740',
@@ -23,7 +23,8 @@ $(document).ready(() => {
      $('#marquee').append(`<a href="https://steamcommunity.com/profiles/${link.link}" target="_BLANK">${link.name}</a>`);
      link = $('#marquee').children('a').last();
    }
-
+ });
+ 
   if (mobileAndTabletCheck()) {
     $('#background').replaceWith('<div id="background" style="background-image: url(assets/images/mobile-background.jpg);"></div>');
 
