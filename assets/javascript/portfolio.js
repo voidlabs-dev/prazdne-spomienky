@@ -8,21 +8,8 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 
 
  $(document).ready(() => {
-   const links = [
-     {
-       name: 'Nič nezostáva v pamäti tak silno ako to, čo chceme zabudnúť',
-       link: '76561197960276740',
-     },
-     {
-       name: '- Michel de Montaigne',
-       link: '76561198193201687',
-     },
-   ];
- 
-   for (let i in links) {
-     let link = links[i];
-     $('#marquee').append(`<a href="https://steamcommunity.com/profiles/${link.link}" target="_BLANK">${link.name}</a>`);
-     link = $('#marquee').children('a').last();
+   const text = 'Nič nezostáva v pamäti tak silno ako to, čo chceme zabudnúť - Michel de Montaigne';
+  $('#marquee').text(text);
    }
     
   if (mobileAndTabletCheck()) {
