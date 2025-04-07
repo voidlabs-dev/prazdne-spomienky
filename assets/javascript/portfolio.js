@@ -22,8 +22,6 @@ $(document).ready(() => {
     let link = links[i];
     $('#marquee').append(`<a href="https://steamcommunity.com/profiles/${link.link}" target="_BLANK">${link.name}</a>`);
     link = $('#marquee').children('a').last();
-
-    if (i != links.length - 1) $('#marquee').append(' <img class="emoticon" src="assets/eyes/eye1.png"> ');
   }
 
   if (mobileAndTabletCheck()) {
